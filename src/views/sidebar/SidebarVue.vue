@@ -1,202 +1,96 @@
 <template>
-  <nav class="navbar fixed-top container-fluid" style="padding: 14px 0">
-    <div class="user-detail nav-item dropdown " >
-      <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-      >
-        <b-avatar class="mr-3"></b-avatar>
-      </a>
-      <ul class="dropdown-menu" style="left: -90px">
-        <li>
-          <a class="dropdown-item">
-            <router-link to="/profile" class="nav-link sel">
-              <font-awesome-icon icon="user" />
-              Thông tin cá nhân
-            </router-link>
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item">
-            <router-link to="/changepassword" class="nav-link">
-              <i class="el-icon-refresh-left"></i>
-              Thay đổi mật khẩu
-            </router-link>
-          </a>
-        </li>
-        <li>
-          <hr class="dropdown-divider" />
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <a class="nav-link sel" href @click.prevent="logOut">
-              <font-awesome-icon icon="sign-out-alt" />
-              Đăng xuất
-            </a>
-          </a>
-        </li>
-      </ul>
+  <nav class="navbar fixed-top container-fluid d-flex justify-content-around" style="padding: 14px 0">
+    <img :src="data.logo1" alt="" />
+    <div class="nav-dropdown">
+      <el-dropdown class="me-3">
+        <span class="el-dropdown-link">
+          BESTSELLERS<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Action 1</el-dropdown-item>
+          <el-dropdown-item>Action 2</el-dropdown-item>
+          <el-dropdown-item>Action 3</el-dropdown-item>
+          <el-dropdown-item disabled>Action 4</el-dropdown-item>
+          <el-dropdown-item divided>Action 5</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      <el-dropdown class="me-3">
+        <span class="el-dropdown-link">
+          BESTSELLERS<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Action 1</el-dropdown-item>
+          <el-dropdown-item>Action 2</el-dropdown-item>
+          <el-dropdown-item>Action 3</el-dropdown-item>
+          <el-dropdown-item disabled>Action 4</el-dropdown-item>
+          <el-dropdown-item divided>Action 5</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      <el-dropdown class="me-3">
+        <span class="el-dropdown-link">
+          BESTSELLERS<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Action 1</el-dropdown-item>
+          <el-dropdown-item>Action 2</el-dropdown-item>
+          <el-dropdown-item>Action 3</el-dropdown-item>
+          <el-dropdown-item disabled>Action 4</el-dropdown-item>
+          <el-dropdown-item divided>Action 5</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      <el-dropdown class="me-3">
+        <span class="el-dropdown-link">
+          BESTSELLERS<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Action 1</el-dropdown-item>
+          <el-dropdown-item>Action 2</el-dropdown-item>
+          <el-dropdown-item>Action 3</el-dropdown-item>
+          <el-dropdown-item disabled>Action 4</el-dropdown-item>
+          <el-dropdown-item divided>Action 5</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      <img :src="data.logo2" style="width: 140px;height: 30px;" alt="" />
     </div>
-    <div class="container-fluid">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar"
+    <div class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg"  aria-label="Search" role="img" width="16" viewBox="0 0 16 16" class="icon me-3">
+      <title>Search</title>
+      <desc>Search Icon</desc>
 
-        style="border: none"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="dropdown-menu navbar-brand" style="float: right">
-        <li>
-          <a class="dropdown-item">
-            <router-link to="/profile" class="nav-link sel">
-              <font-awesome-icon icon="user" />
-              Thông tin cá nhân
-            </router-link>
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item">
-            <router-link to="/changepassword" class="nav-link">
-              <i class="el-icon-refresh-left"></i>
-              Thay đổi mật khẩu
-            </router-link>
-          </a>
-        </li>
-        <li>
-          <hr class="dropdown-divider" />
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <a class="nav-link sel" href @click.prevent="logOut">
-              <font-awesome-icon icon="sign-out-alt" />
-              Đăng xuất
-            </a>
-          </a>
-        </li>
-      </ul>
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel"
-      >
-        <div class="offcanvas-header" style="margin: auto">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-            <img src="../../assets/new_logo.png" width="50px" />
-          </h5>
-          <button
-            type="button"
-            class="btn-close btn-close-white text-center"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/profile">
-                <router-link to="/calender"  class="nav-link sel">
-                  <font-awesome-icon icon="home" />
-                  Trang chủ
-                </router-link>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <router-link to="/user"  class="nav-link sel">
-                  <i class="el-icon-question"></i>
-                  Chấm công của tôi
-                </router-link>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <router-link to="/myFurlough"  class="nav-link sel">
-                  <i class="el-icon-question"></i>
-                  Nghỉ phép của tôi
-                </router-link>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/report" class="nav-link sel">
-                  <i class="el-icon-document-copy"> </i> Quản lý chấm công
-                </router-link>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/timesheetmod" class="nav-link sel">
-                  <i class="el-icon-files"> </i> Quản lý chấm công
-                </router-link>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/manage" class="nav-link sel">
-                  <i class="el-icon-files"> </i> Quản lý nhân viên
-                </router-link>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/manageholiday" class="nav-link sel">
-                  <i class="el-icon-files"> </i> Quản lí nghỉ lễ
-                </router-link>
-              </a>
-            </li>
+      
+          <path d="M12.148 11.075l3.629 3.641-1.06 1.06-3.629-3.639a6.673 6.673 0 1 1 1.06-1.062zm-5.225 1.021a5.173 5.173 0 1 0 0-10.346 5.173 5.173 0 0 0 0 10.346z" class="fill"></path>
+        
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="My Account" role="img" width="16" viewBox="0 0 16 18" class="icon me-3">
+      <title>My Account</title>
+      <desc>My Account Icon</desc>
 
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/managerequest" class="nav-link sel">
-                  <i class="el-icon-files"> </i> Quản lý đề xuất
-                </router-link>
-              </a>
-            </li>
-
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/reportFurlough" class="nav-link sel">
-                  <i class="el-icon-document-copy"></i> Thống kê nghỉ phép
-                </router-link>
-              </a>
-            </li>
-
-            <li class="nav-item" >
-              <a class="nav-link">
-                <router-link to="/timesheetadmin" class="nav-link sel">
-                  <i class="el-icon-files"></i>  Thống kê chấm công
-                </router-link>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+      
+          <path d="M15.75 18H.25a7.75 7.75 0 0 1 15.5 0zM8 9.75a4.75 4.75 0 1 1 0-9.5 4.75 4.75 0 0 1 0 9.5z" class="fill"></path>
+        
+    </svg>      <font-awesome-icon class="me-3" :icon="['fas', 'bag-shopping']" />
+    </div>  
+    </nav>
 </template>
 <script>
+
 export default {
   data() {
-    return {};
+    return {
+      data: {
+        logo2:
+          "https://firebasestorage.googleapis.com/v0/b/natural-skincare-62865.appspot.com/o/Navbar%2Flogo2.svg?alt=media&token=1c1ebefd-d4dc-41a7-a38c-a817170406e2",
+        logo1:
+          "https://firebasestorage.googleapis.com/v0/b/natural-skincare-62865.appspot.com/o/Navbar%2Flogo.svg?alt=media&token=17b28b01-c373-4863-b5bf-66817eb9088d",
+      },
+    };
   },
   props: {},
-  computed: {
-
-  },
-  methods: {
-  },
+  computed: {},
+  methods: {},
 };
 </script>
-<style>
-</style>
+<style></style>
 
 <style scoped>
 * {
@@ -207,41 +101,41 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-weight: 600;
 }
-.user-detail{
+.user-detail {
   position: fixed;
   top: 10px;
   right: 10px;
   z-index: 1030;
 }
 
-#offcanvasDarkNavbar{
-  width:16%;
+#offcanvasDarkNavbar {
+  width: 16%;
 }
 
 
-.nav-link:hover{
-  color: #75c4c0;
-}
-
-.nav-link:focus{
-  color: #ed9696;
-}
 @media screen and (max-width: 700px) {
-      #offcanvasDarkNavbar{
-          width:60%
-        }
+  #offcanvasDarkNavbar {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 750px) and (max-width: 950px) {
-      #offcanvasDarkNavbar{
-          width:30%
-        }
+  #offcanvasDarkNavbar {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-      #offcanvasDarkNavbar{
-          width:25%
-        }
+  #offcanvasDarkNavbar {
+    width: 25%;
+  }
+}
+.icon :hover {
+  fill: #54585a;
+}
+.icon {
+  stroke: none;
+  stroke-width: 2px;
 }
 
 

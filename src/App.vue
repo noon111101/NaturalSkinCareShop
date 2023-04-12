@@ -1,42 +1,22 @@
 <template>
   <div id="app">
-    <Sidebar />
-    <div class="container-fluid">
+    <SidebarVue />
+    <div class="container-fluid" style="padding: 0;">
       <router-view />
     </div>
   </div>
 </template>
 <script>
-import Sidebar from '@/views/sidebar/SidebarVue.vue'
-import { sidebarWidth } from '@/views/sidebar/state'
-import { collapsed, toggleSidebar } from '@/views/sidebar/state'
+
+import SidebarVue from './views/sidebar/SidebarVue.vue';
 export default {
-  components:{Sidebar},
-  setup() {
-    return { sidebarWidth,collapsed, toggleSidebar }
-  },
+  components:{  SidebarVue },
+
   computed: {
-    currentUser() {
-      return this.$store.state.auth.user;
-    },
-    showAdminBoard() {
-      if (this.currentUser && this.currentUser.roles) {
-        return this.currentUser.roles.includes('ROLE_ADMIN');
-      }
-      return false;
-    },
-    showModeratorBoard() {
-      if (this.currentUser && this.currentUser.roles) {
-        return this.currentUser.roles.includes('ROLE_MANAGE');
-      }
-      return false;
-    }
+    
   },
   methods: {
-    logOut() {
-      this.$store.dispatch('auth/logout');
-      this.$router.push('/login');
-    }
+  
   }
 };
 </script>

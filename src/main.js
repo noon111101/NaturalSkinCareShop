@@ -4,18 +4,28 @@ import router  from './router';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import VeeValidate from 'vee-validate';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import ElementUI from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/main.css';
+library.add(faHatWizard)
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+
+/* add icons to the library */
+library.add(faUserSecret)
 import {
   faHome,
   faUser,
   faUserPlus,
   faSignInAlt,
-  faSignOutAlt
+  faSignOutAlt,
+  faMagnifyingGlass,
+  faBagShopping
 } from '@fortawesome/free-solid-svg-icons';
 import VueSweetalert2 from 'vue-sweetalert2';
 
@@ -23,18 +33,19 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 Vue.use(VueSweetalert2);
-library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt);
+library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt,faMagnifyingGlass,faBagShopping);
 Vue.config.productionTip = false;
 Vue.use(ElementUI, { locale })
 
 Vue.use(VeeValidate);
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
