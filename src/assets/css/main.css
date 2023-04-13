@@ -3,7 +3,7 @@ body{
     width: 100%;
     padding-top: 90px;
     font-family: 'Inter', sans-serif;
-    
+
 }
 .el-button-group{
     display: none;
@@ -132,4 +132,43 @@ body{
         padding: 7px 15px;
         font-size: 14px;
     }
+}
+.el-carousel__indicators--outside {
+    display: none;
+}
+.el-rate__item {
+    margin-right: -7px !important;
+}
+.button{
+    display: inline-block;
+    max-width: 100%;
+    padding: 0 24px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #173f35;
+    border: 1px solid #173f35;
+    color: #fff;
+    border-radius: 0;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: .875rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .2s cubic-bezier(.12,.98,.33,.99),background-color .2s cubic-bezier(.12,.98,.33,.99),color .2s cubic-bezier(.12,.98,.33,.99);
+}
+.button.secondary{
+    min-width: 150px;
+    border-color: #2d2926;
+    background-color: transparent;
+    color: #2d2926;
+}
+.button.secondary:active, .button.secondary:hover {
+    border-color: #979797;
+    background-color: transparent;
+    color: #979797;
 }

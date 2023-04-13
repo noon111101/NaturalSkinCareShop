@@ -16,16 +16,19 @@
         </h3>
       </div>
       <a>
-        <button class="p-3">READ OUR STORY</button>
+        <button class="p-3 green-button">READ OUR STORY</button>
       </a>
     </section>
+    <ProductBseller style="margin-bottom:500px "/>
     <ProductIntro />
+
   </div>
 </template>
 
 <script>
 import Carousel from "./carousel/index.vue";
 import ProductIntro from "./productintro/ProductIntro.vue";
+import ProductBseller from "@/views/product-bestseller/ProductBseller.vue";
 
 
 export default {
@@ -35,7 +38,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: { Carousel, ProductIntro },
+  components: {ProductBseller, Carousel, ProductIntro },
 };
 </script>
 
@@ -43,7 +46,7 @@ export default {
 section {
   padding: 80px;
 }
-button {
+.green-button {
   display: inline-block;
   max-width: 100%;
   /* padding: 16px; */
@@ -67,8 +70,9 @@ button {
     background-color 0.2s cubic-bezier(0.12, 0.98, 0.33, 0.99),
     color 0.2s cubic-bezier(0.12, 0.98, 0.33, 0.99);
 }
-button:hover {
+.green-button:hover {
   background-color: #206c49;
+  border-color: #206c49;
 }
 
 </style>

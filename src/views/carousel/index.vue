@@ -1,13 +1,13 @@
 <template>
 
-  <el-carousel style="padding: 0; margin: 0;" indicator-position="outside" height="600px">
+  <el-carousel style="padding: 0; margin: 0;" indicator-position="outside" height="900px">
     <el-carousel-item v-for=" (item,index)  in data" :key="index" >
         <img style="width: 100%" :src="item.url" alt="">
     </el-carousel-item>
   </el-carousel>
 </template>
 
-<script>    
+<script>
 export default {
   name: "CarouselHome",
 
