@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import ProductDetail from "@/views/product-bestseller/product-detail/ProductDetail.vue";
+import ProductDetail from "@/views/product/productBestSeller/productBanner/ProductBanner.vue";
 
 export default {
   name: "ProductBseller",

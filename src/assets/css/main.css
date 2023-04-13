@@ -172,3 +172,11 @@ body{
     background-color: transparent;
     color: #979797;
 }
+.button.reversed {
+    border-color: #fff;
+    background-color: #fff;
+    color: #2d2926;
+}
+a.button, a.button:hover {
+    text-decoration: none;
+}

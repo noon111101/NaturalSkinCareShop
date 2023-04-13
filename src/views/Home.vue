@@ -20,6 +20,7 @@
       </a>
     </section>
     <ProductBseller style="margin-bottom:500px "/>
+    <ProductSlide/>
     <ProductIntro />
 
   </div>
@@ -27,8 +28,9 @@
 
 <script>
 import Carousel from "./carousel/index.vue";
-import ProductIntro from "./productintro/ProductIntro.vue";
-import ProductBseller from "@/views/product-bestseller/ProductBseller.vue";
+import ProductIntro from "./product/productIntro/ProductIntro.vue";
+import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
+import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
 
 
 export default {
@@ -38,7 +40,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: {ProductBseller, Carousel, ProductIntro },
+  components: {ProductSlide, ProductBseller, Carousel, ProductIntro },
 };
 </script>
 
