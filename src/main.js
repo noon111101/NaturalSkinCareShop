@@ -25,7 +25,8 @@ import {
   faSignInAlt,
   faSignOutAlt,
   faMagnifyingGlass,
-  faBagShopping
+  faBagShopping,
+  faEarthOceania
 } from '@fortawesome/free-solid-svg-icons';
 import VueSweetalert2 from 'vue-sweetalert2';
 
@@ -33,7 +34,7 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 Vue.use(VueSweetalert2);
-library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt,faMagnifyingGlass,faBagShopping);
+library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt,faMagnifyingGlass,faBagShopping,faEarthOceania);
 Vue.config.productionTip = false;
 Vue.use(ElementUI, { locale })
 

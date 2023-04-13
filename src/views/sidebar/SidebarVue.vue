@@ -50,10 +50,10 @@
           <el-dropdown-item divided>Action 5</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
-      <img :src="data.logo2" style="width: 140px;height: 30px;" alt="" />
+      <img :src="data.logo2" style="width: 140px;height: 85px;" alt="" />
     </div>
     <div class="nav-logo">
-      <svg xmlns="http://www.w3.org/2000/svg"  aria-label="Search" role="img" width="16" viewBox="0 0 16 16" class="icon me-3">
+      <svg xmlns="http://www.w3.org/2000/svg"  aria-label="Search" role="img" width="16" viewBox="0 0 16 16" class="icon me-4">
       <title>Search</title>
       <desc>Search Icon</desc>
 
@@ -61,7 +61,7 @@
           <path d="M12.148 11.075l3.629 3.641-1.06 1.06-3.629-3.639a6.673 6.673 0 1 1 1.06-1.062zm-5.225 1.021a5.173 5.173 0 1 0 0-10.346 5.173 5.173 0 0 0 0 10.346z" class="fill"></path>
         
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" aria-label="My Account" role="img" width="16" viewBox="0 0 16 18" class="icon me-3">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="My Account" role="img" width="16" viewBox="0 0 16 18" class="icon me-4">
       <title>My Account</title>
       <desc>My Account Icon</desc>
 
