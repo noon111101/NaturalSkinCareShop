@@ -10,6 +10,10 @@ const router = new Router({
       path: "",
       component: () => import("./views/Home.vue"),
     },
+    {
+      path: "/test",
+      component: () => import("./views/testBefore.vue"),
+    },
 
   ]});
 

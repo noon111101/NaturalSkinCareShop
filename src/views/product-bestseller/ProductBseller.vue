@@ -1,8 +1,11 @@
 <template>
   <div class="position-relative">
+    <div class="position-relative">
     <img :src="bestSellerBackground" style="width: 100%;height: 340px">
+    <div  class="overlay overlay_2"></div>
+    </div>
     <div class="position-absolute top-50 start-50 translate-middle"
-         style="margin-top: 150px"
+         style="margin-top: 220px"
     >
       <h3 class="text-center text-uppercase text-white mb-5"
           style="letter-spacing: 6.7px;line-height: 1.92"
@@ -91,5 +94,14 @@ a{
   cursor: pointer;
   text-decoration: none;
 }
-
+.overlay {
+  position: absolute;
+  background: rgba(57, 57, 57, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay_2 {
+  inset: 0;
+}
 </style>
