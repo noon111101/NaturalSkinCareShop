@@ -22,6 +22,7 @@
           :value="data.vote"
           class="float-end d-inline"
           disabled
+
       >
       </el-rate>
     </div>

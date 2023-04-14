@@ -19,10 +19,9 @@
         <button class="p-3 green-button">READ OUR STORY</button>
       </a>
     </section>
-    <ProductBseller style="margin-bottom:500px "/>
-    <ProductSlide/>
+    <ProductBseller style="margin-bottom: 500px" />
+    <ProductSlide />
     <ProductIntro />
-
   </div>
 </template>
 
@@ -32,7 +31,6 @@ import ProductIntro from "./product/productIntro/ProductIntro.vue";
 import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
 import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
 
-
 export default {
   name: "HomeBar",
   data() {
@@ -40,7 +38,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: {ProductSlide, ProductBseller, Carousel, ProductIntro },
+  components: { ProductSlide, ProductBseller, Carousel, ProductIntro },
 };
 </script>
 
