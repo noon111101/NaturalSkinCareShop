@@ -22,9 +22,13 @@
     <ProductBseller style="margin-bottom: 500px" />
     <ProductSlide />
     <ProductIntro />
-    <IconsIngredient />
+    <IconsIngredient class="mb-5"/>
+    <JournalIntro />
     <OrderBars />
     <ProductInstagram class="mt-5"/>
+    <EmailBars />
+    <FooterLinks />
+    <FooterIcons />
   </div>
 </template>
 
@@ -36,6 +40,10 @@ import ProductIntro from "./product/productIntro/ProductIntro.vue";
 import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
 import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
 import ProductInstagram from "@/views/product/productInstagram/ProductInstagram.vue";
+import EmailBars from "./emailBars/EmailBars.vue";
+import FooterIcons from "./FooterIcons/FooterIcons.vue";
+import FooterLinks from "./FooterLinks/FooterLinks.vue";
+import JournalIntro from "./JournalIntro/JournalIntro.vue";
 
 export default {
   name: "HomeBar",
@@ -44,7 +52,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: { ProductSlide, ProductBseller, Carousel, ProductIntro,ProductInstagram, IconsIngredient, OrderBars },
+  components: { ProductSlide, ProductBseller, Carousel, ProductIntro, ProductInstagram, IconsIngredient, OrderBars, EmailBars, FooterIcons, FooterLinks, JournalIntro },
 };
 </script>
 
