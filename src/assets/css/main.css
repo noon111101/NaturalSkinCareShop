@@ -187,18 +187,19 @@ a.button:hover {
   background-color: #206c49;
   border-color: #206c49;
 }
+
 .helper {
 position: -webkit-sticky;
   position: sticky;
   margin-right: 30px;
   margin-bottom: 30px;
-  float: right;
   width: 45px;
   height: 45px;
   background-color: #173f35;
   border-radius: 50%;
 
 }
+
 .helper svg {
   position: absolute;
   max-width: 65% !important;
@@ -211,6 +212,28 @@ position: -webkit-sticky;
   margin: auto;
   visibility: visible;
   opacity: 1;
+}
+.rewards-sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 146px;
+  height: 60px;
+  background-color: #173f35;
+  border-radius: 30px;
+  padding-top: 10px;
+}
+.rewards-sticky .launcher-text {
+  color: white;
+  margin-left: 12px;
+   font-size: 16px;
+   line-height: 30px;
+   white-space: nowrap;
+}
+.rewards-sticky .launcher-icon {
+  height: 30px;
+  width: 30px;
 }
 .slick-list{
     padding: 0 !important;
@@ -238,4 +261,31 @@ position: -webkit-sticky;
     width: 57px!important;
     height: 57px!important;
     background: #f4f3f0bf!important;
+}
+.el-input__inner{
+  background-color: unset!important;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  letter-spacing: 6.7px;
+  line-height: 1.92;
+}
+.el-input__suffix {
+  right: 0px;
+}
+.el-select-dropdown__item{
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 6.7px;
+  line-height: 1.92;
+  color: #54585a;
+}
+.el-select-dropdown__item:hover {
+  color: #206c49;
+  text-decoration: underline;
+}
+.el-select-dropdown__item.selected {
+  color: #206c49;
+  font-weight: 700;
 }

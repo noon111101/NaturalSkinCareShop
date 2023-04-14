@@ -5,14 +5,14 @@
       <div class="img-product">
           <img :src="n.imgUrl" alt="" srcset="" style="width: 100%; height: 580px;" />
         </div>
-        <div class="mb-5" style="max-height: 100px;">
-          <h3 class="text-uppercase py-4 fs-1 fw-bold text-black lh-1 align-self-center" >{{ n.title }}</h3>
+        <div class="mb-5" style="height: 100px;">
+          <h3 class="text-uppercase py-4 fs-1 fw-bold text-black lh-1" >{{ n.title }}</h3>
         </div>
         <p class="px-4 mt-3 mb-4">{{ n.content }}</p>
         <button class="button view-more">{{ n.buttonContent }}</button>
       </div>
     <div class="col-2"></div>
-  </section>  
+  </section>
 </template>
 
 <script>

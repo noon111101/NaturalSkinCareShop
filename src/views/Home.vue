@@ -22,6 +22,7 @@
     <ProductBseller style="margin-bottom: 500px" />
     <ProductSlide />
     <ProductIntro />
+
   </div>
 </template>
 
