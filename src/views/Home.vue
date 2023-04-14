@@ -23,12 +23,14 @@
     <ProductSlide />
     <ProductIntro />
     <IconsIngredient />
+    <OrderBars />
   </div>
 </template>
 
 <script>
 import IconsIngredient from "./IngredientIcons/IconsIngredient.vue";
 import Carousel from "./carousel/index.vue";
+import OrderBars from "./orderBars/OrderBars.vue";
 import ProductIntro from "./product/productIntro/ProductIntro.vue";
 import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
 import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
@@ -40,7 +42,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: { ProductSlide, ProductBseller, Carousel, ProductIntro, IconsIngredient },
+  components: { ProductSlide, ProductBseller, Carousel, ProductIntro, IconsIngredient, OrderBars },
 };
 </script>
 

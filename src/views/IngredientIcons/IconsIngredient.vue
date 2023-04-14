@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center px-5 m-auto mt-5" style="width: 1248px">
+  <div class="text-center px-3 m-auto mt-5" style="width: 1248px">
     <div class="title">
       <h2 class="fs-1 fw-bold text-uppercase mb-5">Our Ingredients</h2>
     </div>
