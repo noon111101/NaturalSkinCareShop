@@ -22,10 +22,12 @@
     <ProductBseller style="margin-bottom: 500px" />
     <ProductSlide />
     <ProductIntro />
+    <IconsIngredient />
   </div>
 </template>
 
 <script>
+import IconsIngredient from "./IngredientIcons/IconsIngredient.vue";
 import Carousel from "./carousel/index.vue";
 import ProductIntro from "./product/productIntro/ProductIntro.vue";
 import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
@@ -38,7 +40,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: { ProductSlide, ProductBseller, Carousel, ProductIntro },
+  components: { ProductSlide, ProductBseller, Carousel, ProductIntro, IconsIngredient },
 };
 </script>
 
