@@ -22,12 +22,16 @@
     <ProductBseller style="margin-bottom: 500px" />
     <ProductSlide />
     <ProductIntro />
+    <IconsIngredient />
+    <OrderBars />
     <ProductInstagram class="mt-5"/>
   </div>
 </template>
 
 <script>
+import IconsIngredient from "./IngredientIcons/IconsIngredient.vue";
 import Carousel from "./carousel/index.vue";
+import OrderBars from "./orderBars/OrderBars.vue";
 import ProductIntro from "./product/productIntro/ProductIntro.vue";
 import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
 import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
@@ -40,7 +44,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: {ProductInstagram, ProductSlide, ProductBseller, Carousel, ProductIntro },
+  components: { ProductSlide, ProductBseller, Carousel, ProductIntro,ProductInstagram, IconsIngredient, OrderBars },
 };
 </script>
 
