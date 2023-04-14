@@ -183,6 +183,10 @@ a.button,
 a.button:hover {
   text-decoration: none;
 }
+a {
+  color: #173f35!important;
+  text-decoration: none!important;
+}
 .button:hover {
   background-color: #206c49;
   border-color: #206c49;
@@ -197,7 +201,7 @@ position: -webkit-sticky;
   height: 45px;
   background-color: #173f35;
   border-radius: 50%;
-
+  cursor: pointer;
 }
 
 .helper svg {
@@ -223,6 +227,7 @@ position: -webkit-sticky;
   background-color: #173f35;
   border-radius: 30px;
   padding-top: 10px;
+  cursor: pointer;
 }
 .rewards-sticky .launcher-text {
   color: white;
@@ -288,4 +293,45 @@ position: -webkit-sticky;
 .el-select-dropdown__item.selected {
   color: #206c49;
   font-weight: 700;
+}
+.overlay {
+  position: absolute;
+  background: rgba(57, 57, 57, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay_2 {
+  inset: 0;
+}
+ .ooo-instagram-media__overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 14px 20px;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+   opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.ooo-instagram-media__caption {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.ooo-instagram-media__date {
+  margin-top: auto;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.ooo-instagram-media:hover .ooo-instagram-media__overlay{
+  opacity: 1;
 }

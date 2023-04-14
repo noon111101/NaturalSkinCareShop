@@ -22,7 +22,7 @@
     <ProductBseller style="margin-bottom: 500px" />
     <ProductSlide />
     <ProductIntro />
-
+    <ProductInstagram class="mt-5"/>
   </div>
 </template>
 
@@ -31,6 +31,7 @@ import Carousel from "./carousel/index.vue";
 import ProductIntro from "./product/productIntro/ProductIntro.vue";
 import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
 import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
+import ProductInstagram from "@/views/product/productInstagram/ProductInstagram.vue";
 
 export default {
   name: "HomeBar",
@@ -39,7 +40,7 @@ export default {
   },
   mounted() {},
   methods: {},
-  components: { ProductSlide, ProductBseller, Carousel, ProductIntro },
+  components: {ProductInstagram, ProductSlide, ProductBseller, Carousel, ProductIntro },
 };
 </script>
 

@@ -76,7 +76,7 @@ export default {
             'https://firebasestorage.googleapis.com/v0/b/natural-skincare-62865.appspot.com/o/Section1%2Fsukinskincare.jpg?alt=media&token=3f4aa237-bfc0-4d10-98a1-a4d392a0e3bf'
           ]
         },
-        
+
 
       ]
     };
@@ -95,14 +95,5 @@ a{
   cursor: pointer;
   text-decoration: none;
 }
-.overlay {
-  position: absolute;
-  background: rgba(57, 57, 57, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.overlay_2 {
-  inset: 0;
-}
+
 </style>
