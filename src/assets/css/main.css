@@ -180,3 +180,30 @@ body{
 a.button, a.button:hover {
     text-decoration: none;
 }
+.slick-list{
+    padding: 0 !important;
+}
+.slick-prev:before {
+    content: ''!important;
+}
+.slick-next:before {
+    content: ''!important;
+}
+.slick-arrow svg .fill {
+    fill: #173f35;
+}
+.slick-arrow {
+    z-index: 1;
+    padding: 16px 21px;
+    text-align: center;
+    transition: padding .2s cubic-bezier(.12,.98,.33,.99),background-color .2s cubic-bezier(.12,.98,.33,.99);
+    will-change: padding,background-color;
+}
+.slick-prev:before, .slick-next:before {
+    line-height: 2!important;
+}
+.slick-prev, .slick-next {
+    width: 57px!important;
+    height: 57px!important;
+    background: #f4f3f0bf!important;
+}

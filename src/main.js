@@ -32,6 +32,8 @@ import VueSweetalert2 from 'vue-sweetalert2';
 
 // If you don't need the styles, do not connect
 import 'sweetalert2/dist/sweetalert2.min.css';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 Vue.use(VueSweetalert2);
 library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt,faMagnifyingGlass,faBagShopping,faEarthOceania);

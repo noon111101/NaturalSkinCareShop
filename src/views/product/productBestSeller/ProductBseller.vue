@@ -14,7 +14,7 @@
       <div class="d-flex flex-row " style="width: 1248px" >
         <div v-for="(n,index) in bestSeller" :key="index" >
           <a>
-            <product-detail :data="n"/>
+            <ProductBanner :data="n"/>
           </a>
         </div>
       </div>
@@ -27,11 +27,11 @@
 </template>
 
 <script>
-import ProductDetail from "@/views/product/productBestSeller/productBanner/ProductBanner.vue";
+import ProductBanner from "@/views/product/productBestSeller/productBanner/ProductBanner.vue";
 
 export default {
   name: "ProductBseller",
-  components: {ProductDetail},
+  components: {ProductBanner},
   data() {
     return {
       bestSellerBackground: 'https://firebasestorage.googleapis.com/v0/b/natural-skincare-62865.appspot.com/o/Section1%2FBest-Sellers-Background.jpg?alt=media&token=d8ccb846-ae55-474c-bb19-fae06aa22b1c',

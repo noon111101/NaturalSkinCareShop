@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "ProductDetail",
+  name: "ProductBanner",
   props: {
     data: Object
   },

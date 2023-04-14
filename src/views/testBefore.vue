@@ -4,12 +4,41 @@
     <div  class="overlay overlay_2">
 
     </div>
+    <div class="px-4 py-4">
+      <VueSlickCarousel style="width: 80%;height: 80%"  v-bind="settings">
+        <div><h3>1</h3></div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+        <div><h3>5</h3></div>
+        <div><h3>6</h3></div>
+        <div><h3>7</h3></div>
+        <div><h3>8</h3></div>
+      </VueSlickCarousel>
+    </div>
+
   </div>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+
 export default {
-  name: "testBefore"
+  name: "testBefore",
+  data(){
+    return{
+      settings:{
+        "centerMode": true,
+        "centerPadding": "20px",
+        "focusOnSelect": true,
+        "infinite": true,
+        "slidesToShow": 3,
+        "speed": 500
+      }
+    }
+  },
+  components: { VueSlickCarousel }
+
 }
 </script>
 
