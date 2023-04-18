@@ -60,6 +60,25 @@ body {
   margin: 0px auto 20px;
   z-index: -1;
 }
+.el-dropdown-link{
+  font-size: .8125rem;
+  letter-spacing: 1px;
+  color: #173f35;
+}
+.el-dropdown:hover .el-dropdown-link{
+  border-bottom: 5px solid #206c49;
+  padding-bottom: 22px;
+}
+.foreground--brand {
+  color: #173f35;
+}
+.el-dropdown-menu {
+  position: unset;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .notfound .notfound-404 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 236px;
@@ -74,7 +93,9 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+.text-right {
+  text-align: right;
+}
 .notfound .notfound-404 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -132,11 +153,19 @@ body {
     font-size: 14px;
   }
 }
+.row.vertical-end {
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
 .el-carousel__indicators--outside {
   display: none;
 }
 .el-rate__item {
   margin-right: -7px !important;
+}
+.icon svg .fill {
+  fill: #173f35;
+  transition: fill .2s cubic-bezier(.12,.98,.33,.99);
 }
 .button {
   display: inline-block;
@@ -334,4 +363,14 @@ position: -webkit-sticky;
 }
 .ooo-instagram-media:hover .ooo-instagram-media__overlay{
   opacity: 1;
+}
+.d-none{
+  display: none;
+}
+.line-height-1x {
+  line-height: 1;
+}
+
+.letter-spacing-2x {
+  letter-spacing: 1px;
 }

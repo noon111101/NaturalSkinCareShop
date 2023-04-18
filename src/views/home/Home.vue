@@ -33,17 +33,17 @@
 </template>
 
 <script>
-import IconsIngredient from "./IngredientIcons/IconsIngredient.vue";
-import Carousel from "./carousel/index.vue";
-import OrderBars from "./orderBars/OrderBars.vue";
-import ProductIntro from "./product/productIntro/ProductIntro.vue";
-import ProductBseller from "@/views/product/productBestSeller/ProductBseller.vue";
-import ProductSlide from "@/views/product/productSilde/ProductSlide.vue";
-import ProductInstagram from "@/views/product/productInstagram/ProductInstagram.vue";
-import EmailBars from "./emailBars/EmailBars.vue";
-import FooterIcons from "./FooterIcons/FooterIcons.vue";
-import FooterLinks from "./FooterLinks/FooterLinks.vue";
-import JournalIntro from "./JournalIntro/JournalIntro.vue";
+import IconsIngredient from "../../component/ingredientIcons/IconsIngredient.vue";
+import Carousel from "../../component/carousel/index.vue";
+import OrderBars from "../../component/orderBars/OrderBars.vue";
+import ProductIntro from "../../component/product/productIntro/ProductIntro.vue";
+import ProductBseller from "@/component/product/productBestSeller/ProductBseller.vue";
+import ProductSlide from "@/component/product/productSilde/ProductSlide.vue";
+import ProductInstagram from "@/component/product/productInstagram/ProductInstagram.vue";
+import EmailBars from "../../component/emailBars/EmailBars.vue";
+import FooterIcons from "../../component/footer/FooterIcons/FooterIcons.vue";
+import FooterLinks from "../../component/footer/FooterLinks/FooterLinks.vue";
+import JournalIntro from "../../component/journalIntro/JournalIntro.vue";
 
 export default {
   name: "HomeBar",

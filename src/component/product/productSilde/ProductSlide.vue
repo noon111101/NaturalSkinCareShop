@@ -47,7 +47,7 @@
 
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
-import ProductBanner from "@/views/product/productBestSeller/productBanner/ProductBanner.vue";
+import ProductBanner from "@/component/product/productBestSeller/productBanner/ProductBanner.vue";
 
 export default {
   name: "ProductSlide",

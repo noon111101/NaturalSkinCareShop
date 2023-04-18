@@ -54,6 +54,20 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+ElementUI.Dropdown.methods.hide = function hide() {
+  var _this2 = this;
+
+  if (!this.triggerElm || this.triggerElm.disabled) return;
+  this.removeTabindex();
+  if (this.tabindex >= 0) {
+    this.resetTabindex(this.triggerElm);
+  }
+  clearTimeout(this.timeout);
+  this.timeout = setTimeout(function () {
+    _this2.visible = false;
+  }, this.trigger === 'click' ? 0 : this.hideTimeout);
+}
+
 
 new Vue({
   router, render: h => h(App)

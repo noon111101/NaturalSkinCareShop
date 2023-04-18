@@ -14,7 +14,7 @@
 <script>
 // eslint-disable-next-line no-unused-vars
 import VueSlickCarousel from "vue-slick-carousel";
-import ProductInstaBanner from "@/views/product/productInstagram/ProductInstaBanner.vue";
+import ProductInstaBanner from "@/component/product/productInstagram/ProductInstaBanner.vue";
 export default {
   name: "ProductInstagram",
   components: {ProductInstaBanner, VueSlickCarousel },

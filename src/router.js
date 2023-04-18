@@ -8,11 +8,11 @@ const router = new Router({
   routes: [
     {
       path: "",
-      component: () => import("./views/Home.vue"),
+      component: () => import("./views/home/Home.vue"),
     },
     {
       path: "/test",
-      component: () => import("./views/testBefore.vue"),
+      component: () => import("./views/test.vue"),
     },
 
   ]});

@@ -26,7 +26,6 @@
       >
       </el-rate>
     </div>
-
   </div>
 </template>
 

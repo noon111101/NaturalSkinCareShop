@@ -225,8 +225,8 @@
     </div>
     <div class="row copyright mt-5">
       <div class="col-4">
-        <a href="/" title="Sukin Naturals USA" aria-label="Sukin Naturals USA"
-          class="copy-r">© 2023 Sukin</a
+        <a href="/public" title="Sukin Naturals USA" aria-label="Sukin Naturals USA"
+           class="copy-r">© 2023 Sukin</a
         >
       </div>
       <div class="col-4">

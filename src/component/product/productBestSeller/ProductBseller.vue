@@ -22,12 +22,12 @@
         <a href="/collections/best-sellers" class="button secondary text-uppercase" title="See all" aria-label="See all">See all</a>
       </div>
     </div>
-
+    <div/>
   </div>
 </template>
 
 <script>
-import ProductBanner from "@/views/product/productBestSeller/productBanner/ProductBanner.vue";
+import ProductBanner from "@/component/product/productBestSeller/productBanner/ProductBanner.vue";
 
 export default {
   name: "ProductBseller",

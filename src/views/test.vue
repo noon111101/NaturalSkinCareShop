@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProductInstagram from "@/views/product/productInstagram/ProductInstagram.vue";
+import ProductInstagram from "@/component/product/productInstagram/ProductInstagram.vue";
 
 export default {
   name: "testBefore",

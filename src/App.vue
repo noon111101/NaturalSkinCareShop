@@ -10,9 +10,9 @@
 </template>
 <script>
 
-import SidebarVue from './views/sidebar/SidebarVue.vue';
-import StickyBottomRight from "@/views/sticky/StickyBottomRight.vue";
-import StickyBottomLeft from "@/views/sticky/StickyBottomLeft.vue";
+import SidebarVue from './component/navbar/SidebarVue.vue';
+import StickyBottomRight from "@/component/sticky/StickyBottomRight.vue";
+import StickyBottomLeft from "@/component/sticky/StickyBottomLeft.vue";
 export default {
   components:{StickyBottomLeft, StickyBottomRight,  SidebarVue },
 
