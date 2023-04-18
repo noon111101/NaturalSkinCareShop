@@ -11,6 +11,11 @@ const router = new Router({
       component: () => import("./views/home/Home.vue"),
     },
     {
+      path: "/collections",
+      component: () => import("./views/collection/index.vue"),
+    },
+
+    {
       path: "/test",
       component: () => import("./views/test.vue"),
     },

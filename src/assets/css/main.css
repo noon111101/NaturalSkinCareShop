@@ -3,6 +3,7 @@ body {
   width: 100%;
   padding-top: 90px;
   font-family: "Inter", sans-serif;
+  color: #2d2926;
 }
 .el-button-group {
   display: none;
@@ -166,6 +167,17 @@ body {
 .icon svg .fill {
   fill: #173f35;
   transition: fill .2s cubic-bezier(.12,.98,.33,.99);
+}
+.button.medium{
+  height: 42px;
+  line-height: 42px;
+  padding: 0 25px;
+}
+
+.button.secondary{
+  border-color: #2d2926;
+  background-color: transparent;
+  color: #2d2926;
 }
 .button {
   display: inline-block;
@@ -370,7 +382,11 @@ position: -webkit-sticky;
 .line-height-1x {
   line-height: 1;
 }
-
+p {
+  font-size: .9375rem;
+  letter-spacing: .5px;
+  line-height: 1.45;
+}
 .letter-spacing-2x {
   letter-spacing: 1px;
 }

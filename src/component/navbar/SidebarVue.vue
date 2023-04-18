@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed-top bg-white " >
+  <nav class="fixed-top" :class="{'bg-top': !show , 'bg-not-top': show}" style="box-shadow: 0 2px 2px 0 transparent;">
     <div class="row justify-content-center vertical-end mx-auto" style="padding: 14px 0; width: 1248px;">
       <span class="col-2 icon icon-logo">
     <svg xmlns="http://www.w3.org/2000/svg" aria-label="Logo" role="img" width="127" viewBox="0 0 127 74" class="" aria-hidden="true" data-acsb-hidden="true">
@@ -300,7 +300,8 @@ export default {
         },
 
 
-      ]
+      ],
+      show:false
     };
   },
   props: {},
@@ -310,7 +311,6 @@ export default {
   methods: {
     // eslint-disable-next-line vue/no-dupe-keys
     changeRange(range){
-      this.rangeShop.face = false;
       if(range == 'body')
         this.rangeShop.body = true
       if(range == 'hair')
@@ -319,8 +319,23 @@ export default {
         this.rangeShop.gifts = true
       if(range == 'travel')
         this.rangeShop.travel = true
+      this.rangeShop.face = false;
+
+    },
+    trasitionNavBar(){
+      if(window.scrollY >100){
+        this.show = true
+      }else {
+        this.show = false
+      }
+    },
+    setUp(){
+      window.addEventListener("scroll",this.trasitionNavBar)
     }
   },
+  mounted() {
+    this.setUp();
+  }
 };
 </script>
 <style></style>
@@ -360,5 +375,11 @@ export default {
 }
 .active{
   background-color: #f4f3f0;
+}
+.bg-not-top{
+  background-color: white;
+}
+.bg-top{
+  background-color: #f4f3f0cc;
 }
 </style>
