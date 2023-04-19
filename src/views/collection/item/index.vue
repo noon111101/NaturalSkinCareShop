@@ -3,7 +3,7 @@
     <div class="row justify-content-md-center mt-3">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">Home</el-breadcrumb-item>
-        <el-breadcrumb-item>Collections</el-breadcrumb-item>
+        <el-breadcrumb-item>Natural Body Products</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="filter-range mt-4">
