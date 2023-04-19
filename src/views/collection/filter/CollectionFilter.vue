@@ -21,25 +21,47 @@
       </button>
       <div class="position-relative">
         <div class="filter-options-wrapper " :class="{'transit-filter':filter}">
-          <div class="filter-options">
-            <h1>Giả dữ liệu</h1>
-            <h1>Giả dữ liệu</h1>
-            <h1>Giả dữ liệu</h1>
-            <h1>Giả dữ liệu</h1>
-            <h1>Giả dữ liệu</h1>
-            <h1>Giả dữ liệu</h1>
-            <div class="grid small padding-left-0x padding-right-0x large--padding-left-15x large--padding-right-15x">
-              <div class="row tight horizontal-center filter-close">
-                <div class="column large--6 xsmall-medium--6">
-                  <button class="wide button secondary" data-filter-clear="" fdprocessedid="pdocsm" data-acsb-clickable="true" data-acsb-navigable="true" data-acsb-now-navigable="true" role="button" data-acsb-hover="true" data-acsb-textual-ops="null">Clear</button>
-                </div>
+          <div class="filter-options d-flex flex-row justify-content-around">
+            <div>
+              <h3 class="text-uppercase foreground--text">
+                By Category
+              </h3>
+              <div class="d-flex flex-column">
+                <el-checkbox label="Body lotion"></el-checkbox>
+                <el-checkbox label="Body Scrub"></el-checkbox>
+                <el-checkbox label="Body Wash"></el-checkbox>
+              </div>
 
-                <div class="column large--6 xsmall-medium--6">
-                  <button class="button wide" data-filter-close="" fdprocessedid="ih3wuti" data-acsb-clickable="true" data-acsb-navigable="true" data-acsb-now-navigable="true" role="button" data-acsb-hover="true" data-acsb-textual-ops="close">Show Results</button>
-                </div>
+            </div>
+            <div>
+              <h3 class="text-uppercase foreground--text">
+                Range
+              </h3>
+              <div class="d-flex flex-column">
+                <el-checkbox label="Creamy"></el-checkbox>
+                <el-checkbox label="Sensitive"></el-checkbox>
+                <el-checkbox label="Signature"></el-checkbox>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-uppercase foreground--text">
+                Skin type
+              </h3>
+              <div class="d-flex flex-column">
+                <el-checkbox label="Normal"></el-checkbox>
+                <el-checkbox label="Sensitive"></el-checkbox>
+                <el-checkbox label="Dry"></el-checkbox>
               </div>
             </div>
           </div>
+            <div class="d-flex flex-row justify-content-center py-5">
+                <div class="me-3">
+                  <button class="wide button secondary" data-filter-clear="" fdprocessedid="pdocsm" data-acsb-clickable="true" data-acsb-navigable="true" data-acsb-now-navigable="true" role="button" data-acsb-hover="true" data-acsb-textual-ops="null">Clear</button>
+                </div>
+                <div>
+                  <button class="button wide" data-filter-close="" fdprocessedid="ih3wuti" data-acsb-clickable="true" data-acsb-navigable="true" data-acsb-now-navigable="true" role="button" data-acsb-hover="true" data-acsb-textual-ops="close">Show Results</button>
+                </div>
+            </div>
         </div>
       </div>
     </div>
