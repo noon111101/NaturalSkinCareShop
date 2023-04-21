@@ -69,9 +69,11 @@
           </el-dropdown-menu>
         </el-dropdown>
         <el-dropdown class="me-3">
-        <span class="el-dropdown-link">
+          <router-link to="/collections">
+            <span class="el-dropdown-link">
           SHOP THE RANGE
         </span>
+          </router-link>
           <el-dropdown-menu slot="dropdown" >
             <div class="row justify-content-center ">
             <div class="col-4 submenu-wrap">

@@ -13,9 +13,9 @@
         our bestsellers</h3>
       <div class="d-flex flex-row " style="width: 1248px" >
         <div v-for="(n,index) in bestSeller" :key="index" >
-          <a>
+          <router-link to="/product">
             <ProductBanner :data="n"/>
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="text-center mt-4">
