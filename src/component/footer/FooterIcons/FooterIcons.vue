@@ -223,11 +223,11 @@ export default {
 
 <style scoped>
 .fill{
-    fill: #fff;
+    fill: #fff !important;
     transition: fill 0.2s cubic-bezier(0.12, 0.98, 0.33, 0.99);
 }
 .stroke{
-    stroke: #fff;
+    stroke: #fff !important;
     fill: transparent;
     transition: fill 0.2s cubic-bezier(0.12, 0.98, 0.33, 0.99);
 }
